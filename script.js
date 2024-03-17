@@ -16,7 +16,13 @@ function allClear()
 
 function clearValue()
 {
-    inputValue =  Math.floor(inputValue/10);
+    if(inputValue >= 0)
+    {
+         inputValue =  Math.floor(inputValue/10);
+    }
+    else{
+        inputValue = inputValue.slice(0,-1);
+    }
      document.getElementById('displayVal').value =inputValue;
      if(inputValue == 0)
      {
