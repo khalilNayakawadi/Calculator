@@ -7,7 +7,7 @@ function addValue(number)
     
 }
 
-function allClear(number)
+function allClear()
 {
     inputValue = '';
     document.getElementById('displayVal').value = '';
@@ -24,7 +24,7 @@ function clearValue()
      }
 }
 
-function displayResult(number)
+function displayResult()
 {
     inputValue = eval(inputValue);
     document.getElementById('displayVal').value = inputValue;
