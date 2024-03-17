@@ -20,7 +20,8 @@ function clearValue()
     {
          inputValue =  Math.floor(inputValue/10);
     }
-    else{
+    else
+    {
         inputValue = inputValue.slice(0,-1);
     }
      document.getElementById('displayVal').value =inputValue;
