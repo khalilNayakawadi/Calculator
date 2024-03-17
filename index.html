@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="maincontainer">
+            <h2 align = "center">CALCULATOR</h2>
+            <input type="text" name="display" autofocus id="displayVal">
+            <div class="btncontainer">
+                <button type="button" onclick="allClear()" class="opbtn">AC</button>
+                <button type="button" onclick="clearValue() " class="opbtn">C</button>
+                <button type="button" onclick="addValue('%') " class="opbtn">%</button>
+                <button type="button" onclick="addValue('/') " class="opbtn">÷</button>
+            </div>
+
+            <div class="btncontainer">
+                <button type="button" onclick="addValue('9') ">9</button>
+                <button type="button" onclick="addValue('8') ">8</button>
+                <button type="button" onclick="addValue('7') ">7</button>
+                <button type="button" onclick="addValue('*')" class="opbtn">X</button>
+            </div>
+
+            <div class="btncontainer">
+                <button type="button" onclick="addValue('6') ">6</button>
+                <button type="button" onclick="addValue('5') ">5</button>
+                <button type="button" onclick="addValue('4') ">4</button>
+                <button type="button" onclick="addValue('-') " class="opbtn">-</button>
+            </div>
+
+            <div class="btncontainer">
+                <button type="button" onclick="addValue('3') ">3</button>
+                <button type="button" onclick="addValue('2') ">2</button>
+                <button type="button" onclick="addValue('1') ">1</button>
+                <button type="button" onclick="addValue('+') " class="opbtn">+</button>
+            </div>
+
+            
+            <div class="btncontainer">
+                <button type="button" onclick="addValue('0') ">0</button>
+                <button type="button" onclick="addValue('00') ">00</button>
+                <button type="button" onclick="addValue('.') ">.</button>
+                <button type="button" onclick="displayResult() " class="opbtn">=</button>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
